@@ -1,0 +1,51 @@
+body{
+    color: hsl(0, 0%, 21%);
+    background: rgb(236, 236, 236);
+    font: normal 1rem Bradley Hand, cursive;
+}
+
+a { 
+    text-decoration: none;
+    background: #3d3d3d;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+    width: 200PX;
+   } 
+
+   a:hover{
+    background: #666;
+    padding: 10px 0 10px 15px;
+}
+
+.Prof{
+    background: #3d3d3d;
+}
+
+.PNG{
+    background: #3d3d3d;
+    width: 150px;
+    height: 225px;
+    padding: 20px;
+}
+
+.dark{
+    color: #fff;
+}
+
+.darkl{
+    color: #fff;
+    text-align: top, right;
+}
+
+.images {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}

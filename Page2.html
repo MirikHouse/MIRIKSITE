@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questions</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+        <link rel="stylesheet" href="style.CSS">
+    </head>
+
+    <body>
+        <h1>Дневник по HTML</h1>
+        <h2>Примеры и практика</h2>
+        <hr>
+            <a href="index.html" target="_blank">Главная</a>
+        <hr>
+        <h3>Формы на сайте</h3>
+        <style>
+            form{
+                width: 549px;
+                margin: 20px auto;
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+            fieldset{
+                border: 3px double #ccc;
+                border-radius: 3px;
+                margin: 20px 0;
+                padding: 20px;
+                background: #3d3d3d;
+            }
+            .fieldsetsait{
+                border: 3px double #ccc;
+                border-radius: 3px;
+                margin: 20px 0;
+                padding: 20px;
+                background: #3d3d3d;
+                width: 849px;
+            }
+            label{
+                width: 150px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        </style>
+
+        <form action="#" name="MyForm">
+  <fieldset title="Водите правильно!">
+      <legend>Контактные данные</legend>
+       <p>
+           <label class="dark" for="name">Укажите имя: </label>
+           <input id="name" type="text" placeholder="Ваше име" required autofocus>
+       </p>
+       <p>
+           <label class="dark" for="mail">Укажите e-mail: </label>
+           <input id="mail" type="email" placeholder="Ваш e-mail" required>
+      </p>
+      <p>
+        <label class="dark" for="phone">Укажите ваш номер телефона: </label>
+        <input id="phone" type="tel" placeholder="Ваш номер телефона" maxlength="11">
+   </p>
+   <p>
+    <label class="dark" for="web">Укажите cайт: </label>
+    <input class="dark" id="web" type="url" placeholder="Ваш cайт/если есть">
+   </p>
+   <p>
+     <label class="dark" for="city">Укажите в какой соц-сети вы сидите:</label>
+     <select name="city" id="city" multiple size="3">
+         <option value="city1">Tik Tok</option>
+         <option value="city1">Youtube</option>
+         <option value="city1">Instagram</option>
+         <option value="city1">Квай</option>
+         <option value="city1">Лайк</option>
+         <option value="city1">VK</option>
+     </select>
+  </fieldset>
+  <fieldset>
+      <legend>Личные данные</legend>
+   </p>
+   <p>
+    <label class="dark" for="col">Цвет глаз: </label>
+    <input id="col" type="color" value="#1EFF00" >
+   </p>
+   <p>
+    <labe class="dark" for="num">Укажите ваш вес (кг): </label>
+    <input id="num" type="number" min="0" max="500">
+   </p>
+   <p>
+    <label class="dark" for="ran">Укажите ваш рост (см): </label>
+    <input oninput="out.value=(ran.value);out2.value=(ran.value*10)" id="ran" type="range" min="1" max="300">
+    <br><br>
+    <label class="dark">Ваш рост равен: </label>
+    <output class="dark" id="out">100 </output><label class="dark"> Сантиметров</label>
+    <br><br>
+    <label class="dark">Или: </label>
+    <output class="dark" id="out2">1000</output><label class="dark"> Млиметров</label>
+   </p>
+      <p>
+        <label class="dark" for="pol">Укажите ваш пол: </label>
+        <input class="dark" id="pol" type="radio" name="pol"><label class="dark">Женский</label>
+        <input class="dark" type="radio" name="pol"><label class="dark">Мужской</label>
+   </p>
+   </p>
+   <p>
+  <label class="dark" for="DR">Укажите ДР: </label>
+  <input id="DR" type="date" name="DR">
+   </p>
+   <p>
+    <label class="dark" for="time">Укажите время: </label>
+    <input id="time" type="time" name="time">
+   </p>
+  </fieldset>
+  <fieldset class="fieldsetsait">
+    <legend>По сайту</legend>
+   <p>
+    <label class="dark" for="sub">Получать письма по: </label>
+    <input class="dark" id="sub" type="checkbox" name="sub" checked><label class="dark"> Все</label>
+    <input class="dark"  type="checkbox" name="sub"><label class="dark"> Бизнесу</label>
+    <input class="dark"  type="checkbox" name="sub"><label class="dark"> Акциям</label>
+    <input class="dark"  type="checkbox" name="sub"><label class="dark"> Forux'у</label>
+    </p>
+    <p>
+        <label class="dark" for="pass">Укажите пароль: </label>
+        <input id="pass" type="password" placeholder="Ваш пароль" required>
+   </p>
+   </fieldset>
+   <fieldset>
+   <p>
+       <label class="dark" for="text" style="text-align: center;">Сообщение</label>
+       <br>
+       <textarea name="text" id="text" cols="60" rows="10" placeholder="Ведите сообщение..." maxlength="200"></textarea>
+   </p>
+   </fieldset>
+            <input class="sumbit" type="submit" value="Отправить">  <input class="sumbitX" type="reset" value="Очистить">
+        </form>
+        <h3>Основы таблиц</h3>
+         
+        <style>
+            table{
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th, td{
+                border: 1px solid rgb(128, 47, 47);
+                padding: 5px 9px
+            }
+            thead{
+                background: #eee;
+                border: 5px solid #ccc;
+            }
+            tfoot{
+                background: rgb(249, 255, 170);
+                border: 5px solid #ccc;
+            }
+        </style>
+        <table>
+        <caption><b>Хищные животные</b></caption>
+        <colgroup>
+            <col style="width: 150px; border: 5px solid #ccc;">
+        </colgroup>
+        <colgroup style="border: 5 px solid #ccc;">
+            <col style="width: 350;">
+            <col style="width: 200;">
+            <col style="width: 300;">
+            <col style="width: 50;">
+        </colgroup>
+        <colgroup>
+            <col style="width: 150px; border: 5px solid #ccc;">
+        </colgroup>
+         <thead>  
+            <tr>
+                 <td><b>Животное</b></td>
+                 <td><b>Описание</b></td>
+                 <td><b>Окрас</b></td>
+                 <td><b>Характер</b></td>
+                 <td><b>Жизнь</b></td>
+                 <td><b>Рекомендации</b></td>
+             </tr>
+        </thead>  
+            <tfoot>
+                <tr>
+                    <th>Итого:</th>
+                    <td rowspan="2" colspan="4" style="text-align: right;">Общяя продолжительность жизни - 51 год.</td>
+                    <td rowspan="2">Избегать!</td>
+                </tr>
+                <tr>
+                    <td>4 зверя</td>
+                </tr>
+            </tfoot>
+        <tbody>
+            <tr>
+                <td>Лев</td>
+                <td>Хищное животное король прайда</td>
+                <td>Желтый цвет пушистый</td>
+                <td rowspan="4">Агресивный</td>
+                <td>10+ г.</td>
+                <td rowspan="2">Держать подальше от неопотных людей</td>
+            </tr>
+            <tr>
+                <td>Рысь</td>
+                <td>Хищное животное предок кошок</td>
+                <td>бледно-рыжый цвет пушистый с черными точками</td>
+                <td>7 г.</td>
+            </tr>
+            <tr>
+                <td>Орел</td>
+                <td>Хищная птица</td>
+                <td>Черно-бело-рыжий</td>
+                <td>20-30 г.</td>
+                <td>Держать подальше от детей</td>
+            </tr>
+            <tr>
+                <td>Тигр</td>
+                <td>Хищное животное</td>
+                <td>Рыже-желтый цвет с черными полосками</td>
+                <td>8-10 г.</td>
+                <td>Держать подальше от неопотных людей</td>
+            </tr>
+        </tbody>
+         </table>
+
+
+        <hr>
+        <p>2021 &copy; Денис Юмагулов</p>
+            
+    </body>
+</html>
